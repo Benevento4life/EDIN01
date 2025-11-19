@@ -61,7 +61,7 @@ while index < no_of_primes+10:
             k, j = increment(k, j)
             continue
         print(gcd(x, N), N//gcd(x, N))
-        print("CPU time:", process_time()-st)
+        print("CPU time:", process_time()-st, "seconds")
         exit()
     if is_smooth(y, factorbase): 
         x_is[index] = x
@@ -101,7 +101,6 @@ for i in range(no_of_solutions):
     for j in range(no_of_primes):
         y_solutions[i] = y_solutions[i] * int(pow(factorbase[j], int(total_exponents[j])//2, N)) % N
 
-
 for i in range(no_of_solutions):
     a = gcd(N, x_solutions[i]+y_solutions[i])
     if a in [1, N]:
@@ -109,7 +108,7 @@ for i in range(no_of_solutions):
     b = N//a
     print(a, b)
     print(f"Check: {a} * {b} = {a*b}, {N==a*b}")
-    print("CPU time:", process_time()-st)
+    print("CPU time:", process_time()-st, "seconds")
     exit()
 print("Prime number?")
-print("CPU time:", process_time()-st)
+print("CPU time:", process_time()-st, "seconds")
