@@ -48,4 +48,4 @@ if __name__ == "__main__":
             codes.add(str(nums[i]) + str(nums[i-1]) + str(nums[i-2]) + str(nums[i-3]))  
 
     print("\n".join(map(str, nums)))
-    print(len(codes))
+    #print(len(codes))
