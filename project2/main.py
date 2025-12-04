@@ -43,7 +43,7 @@ if __name__ == "__main__":
     nums = []
 
     for i in range(10**4+3):
-        nums.append(5*seq_2[i%(2**4)]+2*seq_5[i%(5**4)])  
+        nums.append(5*seq_2[i%(2**4)]+seq_5[i%(5**4)] % 10)  
         if i >= 3:
             codes.add(str(nums[i]) + str(nums[i-1]) + str(nums[i-2]) + str(nums[i-3]))  
 
